@@ -56,88 +56,11 @@ namespace agenziaImmobiliare
 
     }
 
-    public class Box : Immobili
-    {
-        public int PostiAuto { get; set; }
-
-        public Box(string codice, string indirizzo, int cap, string citta, int superficie, int utentiInteressati, int postiAuto) : base(codice, indirizzo, cap, citta, superficie, utentiInteressati)
-        {
-            PostiAuto = postiAuto;
-        }
-        public void AggiungiBox(string codice, string indirizzo, int cap, string citta, int superficie, int utentiInteressati, int postiAuto)
-        {
-            Codice = codice;
-            Indirizzo = indirizzo;
-            Cap = cap;
-            Citta = citta;
-            Superficie = superficie;
-            UtentiInteressati = utentiInteressati;
-            PostiAuto = postiAuto;
-        }
-        public override string ToString()
-        {
-            return base.ToString() + $"\nPosti auto: {PostiAuto}";
-        }
-    }
+    
     
 
-    public class Abitazione : Immobili
-    {
-        public int NumeroVani { get; set; }
-        public int NumeroBagni { get; set; }
-
-        public Abitazione(string codice, string indirizzo, int cap, string citta, int superficie, int utentiInteressati, int numeroVani, int numeroBagni) : base(codice, indirizzo, cap, citta, superficie, utentiInteressati)
-        {
-            NumeroVani = numeroVani;
-            NumeroBagni = numeroBagni;
-        }
-        public void AggiungiAbitazione(string codice, string indirizzo, int cap, string citta, int superficie, int utentiInteressati, int numeroVani, int numeroBagni)
-        {
-            Codice = codice;
-            Indirizzo = indirizzo;
-            Cap = cap;
-            Citta = citta;
-            Superficie = superficie;
-            NumeroVani = numeroVani;
-            NumeroBagni = numeroBagni;
-        }
-        public override string ToString()
-        {
-            return base.ToString() + $"\nNumero vani: {NumeroVani}\nNumero bagni: {NumeroBagni}";
-        }
-    }
-    public class Villa : Immobili
-    {
-        public int SuperficieGiardino { get; set; }
-        
-       
-        public Villa(string codice, string indirizzo, int cap, string citta, int superficie, int utentiInteressati, int superficieGiardino) : base(codice, indirizzo, cap, citta, superficie, utentiInteressati)
-        {
-            SuperficieGiardino = superficieGiardino;
-
-        }
-        public void AggiungiVilla(string codice, string indirizzo, int cap, string citta, int superficie, int utentiInteressati, int superficieGiardino)
-        {
-            Codice = codice;
-            Indirizzo = indirizzo;
-            Cap = cap;
-            Citta = citta;
-            Superficie = superficie;
-            UtentiInteressati = utentiInteressati;
-            SuperficieGiardino = superficieGiardino;
-
-        }
-
-        public void ReimpostaSuperficie(int nuovaSuperficie, int nuovaSuperficieGiardino)
-        {
-            Superficie = nuovaSuperficie;
-            SuperficieGiardino = nuovaSuperficieGiardino;
-        }
-        public override string ToString()
-        {
-            return base.ToString() + $"\nSuperficie giardino: {SuperficieGiardino}";
-        }
-    }
+   
+   
 }
     
     
